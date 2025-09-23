@@ -1,0 +1,33 @@
+/* .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} */
+
+
+/* Reset */
+html{
+    box-sizing: border-box;
+}
+*, *::before; *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Begin styling */
+html {
+    background-color: hsl(212, 45%, 89%);
+}
+.background{
+    display: grid;
+    place-items: center;
+}
+.content-card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
