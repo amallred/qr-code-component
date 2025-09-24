@@ -11,7 +11,7 @@
 html{
     box-sizing: border-box;
 }
-*, *::before; *::after {
+*, *::before, *::after {
     box-sizing: inherit;
 }
 body {
@@ -19,15 +19,52 @@ body {
     padding: 0;
 }
 
-/* Begin styling */
+/* End style reset */
+
 html {
     background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
 }
+
 .background{
     display: grid;
     place-items: center;
+    height: 100dvh;
 }
+
 .content-card{
     background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 1px 10px 5px rgba(43, 49, 59, 0.05);
+}
+
+.qr-code {
     border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    margin: 20px;
+}
+
+.title{
+    color: hsl(218, 44%, 22%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.instructions {
+    color: hsl(216, 15%, 48%);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
 }
